@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+table{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px;
+}
+th{
+    background-color: aqua;
+    color: green;
+}
+td{
+    background-color: navy;
+    color: purple;
+}
