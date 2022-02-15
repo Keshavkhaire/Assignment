@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+    console.log(x);  // variable not defined/Undefined
+    var x=5;
+    console.log(x);  // print 5
+    let y;
+    console.log(y);  // variable not defined/Undefined
+    y=10;
+    console.log(y);  // print 5
+    function myFunction(){
+        document.getElementById("sample").innerHTML="Hello";
+    }
+</script>
+</head>
+var is function scoped let is block scoped
+ 
+<body>
+    <button onclick="alert('Today Date : '+Date()+'!');"
+        ondblclick="confirm('Hi');">Click Me</button>
+    <button ondblclick="confirm('Hi');">Click Me</button>
+    <button onclick="myFunction();">Click Me</button>
+    <p id="sample" onclick="this.innerHTML='Do not click on paragraph'">Value will place here</p>
+</body>
+</html>

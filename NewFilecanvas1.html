@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<canvas width="2000px" height="2000px" id="mycanvas"></canvas>
+<script type="text/javascript">
+    var x=document.getElementById("mycanvas");
+    var ctx=x.getContext("2d");
+    ctx.moveTo(0,0);
+    var mystyle=ctx.createLinearGradient(0,200,200,0)
+    //mystyle.addColorStop(0,"blue");
+    mystyle.addColorStop(0,"green");
+    mystyle.addColorStop(1,"red");
+    ctx.fillStyle=mystyle;
+    ctx.lineTo(200,200);
+    ctx.arc(100,40,50,5,10)
+    ctx.font="50px Times New Roman"
+    ctx.fillText("Keshav Khaire", 100, 100)
+    ctx.fillRect(200, 200, 300, 300)
+    ctx.stroke();    // To Draw the line
+</script>
+</body>
+</html>

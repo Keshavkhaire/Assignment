@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<canvas width="1000px" height="1000px" id="mycanvas"></canvas>
+<script type="text/javascript">
+var x=document.getElementById("mycanvas");
+var ctx=x.getContext("2d");
+ctx.fillStyle='blue';
+ctx.fillRect(10,10, 50,50);
+ctx.fillStyle='rgb(24,46,22,0.5)';
+ctx.fillRect(10,10, 500,500);
+ctx.rotate(40);
+ctx.stroke();
+</script>
+ 
+</body>
+</html>
